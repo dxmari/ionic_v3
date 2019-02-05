@@ -1,0 +1,188 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+
+.label {
+    color: #000 !important;
+    opacity: 0.5;
+}
+
+.fab ion-icon {
+    font-size: 2.0rem !important;
+}
+
+.item-inner {
+    border-bottom: 1px solid rgba(8, 8, 8, 0.5) !important;
+    box-shadow: none !important;
+}
+
+.loading-wrapper {
+    padding: 14px 35px !important;
+    max-width: 100% !important;
+    width: calc(100% - 40px);
+}
+
+.spinner-bubbles circle,
+.spinner-crescent circle {
+    stroke: #EF0000 !important;
+    stroke-dasharray: 180px !important;
+}
+
+.alert-button {
+    color: #EF0000 !important;
+    font-weight: 400 !important;
+}
+
+.alert-button-group {
+    padding: 0px 8px !important;
+}
+
+.alert-head {
+    padding: 10px !important;
+}
+
+.popover-content {
+    // padding: 5px 10px !important;
+    padding: 0 !important;
+    width: calc(100% - 20px) !important;
+    margin-left: 10px !important;
+}
+
+.popover-wrapper {
+    width: 100%;
+}
+
+a[disabled],
+button[disabled],
+[ion-button][disabled] {
+    opacity: 1 !important;
+}
+
+
+.mytoaster {
+    position: absolute;
+    bottom: 70px;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+    transform: translateY(500%);
+    opacity: 0;
+}
+
+.mytoast-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background: rgba(119, 116, 116, 0.35) !important;
+    background: #212121 !important;
+    padding: 5px 10px;
+    min-width: 150px;
+    max-width: calc(100% - 20px);
+    border-radius: 15px;
+}
+
+.mytoaster.add {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.mytoast {
+    color: white;
+    font-size: 140%;
+}
+
+[disabled] {
+    opacity: 1 !important;
+}
+
+.input {
+    padding-right: 40px !important;
+}
+
+.scroll-content {
+    transition: 0.4s linear;
+}
+
+.flex-or-block {
+    transition: 0.5s linear;
+    position: absolute !important;
+}
+
+ion-icon {
+    &[class*="custom-"] {
+        mask-size: contain;
+        mask-position: 50% 50%;
+        mask-repeat: no-repeat;
+        background: currentColor;
+        width: 1em;
+        font-size: 2.5rem;
+        height: 1em;
+    }
+
+    // custom icons
+    &[class*="custom-key"] {
+        font-size: 2.0rem !important;
+        mask-image: url(./../assets/key.svg);
+    }
+
+    &[class*="custom-user"] {
+        font-size: 2.2rem !important;
+        mask-image: url(./../assets/userprofile.svg);
+    }
+
+    &[class*="custom-back"] {
+        font-size: 2.2rem !important;
+        mask-image: url(./../assets/back_arrow.svg);
+    }
+
+    &[class*="custom-search"] {
+        font-size: 2.2rem !important;
+        mask-image: url(./../assets/search.svg);
+    }
+
+    &[class*="custom-home"] {
+        font-size: 2.2rem !important;
+        mask-image: url(./../assets/home-black.svg);
+    }
+
+    &[class*="custom-maintenance"] {
+        font-size: 2.2rem !important;
+        mask-image: url(./../assets/maintenance-black.svg);
+    }
+
+    &[class*="custom-assets"] {
+        font-size: 2.2rem !important;
+        mask-image: url(./../assets/assets-black.svg);
+    }
+
+    &[class*="custom-write"] {
+        font-size: 2.2rem !important;
+        mask-image: url(./../assets/complaint-black.svg);
+    }
+
+    &[class*="custom-faq"] {
+        font-size: 2.2rem !important;
+        mask-image: url(./../assets/question.svg);
+    }
+}
+
+input[type="password"]{
+    padding-right: 55px !important;
+}
